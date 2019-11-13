@@ -20,14 +20,14 @@ Gem::Specification.new do |s|
   
   {
     'bundler'     => '~> 1.0.7',
-    'rspec-rails' => '~> 2.5.0'
+    'rspec' => '~> 3.8'
   }.each do |lib, version|
     s.add_development_dependency(lib, version)
   end
   
   {
-    'rails'  => '> 3.2.0',
-    'devise' => '> 3.1.0'
+    'rails'  => '~> 5.0',
+    'devise' => '~> 4.0'
   }.each do |lib, version|
     s.add_runtime_dependency(lib, version)
   end
