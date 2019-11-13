@@ -14,22 +14,22 @@ Gem::Specification.new do |s|
   s.files        = Dir["{app,config,lib}/**/*"] + %w[LICENSE README.rdoc]
   s.require_path = "lib"
   s.rdoc_options = ["--main", "README.rdoc", "--charset=UTF-8"]
-  
+
   s.required_ruby_version     = '>= 1.8.6'
   s.required_rubygems_version = '>= 1.3.6'
-  
+
   {
-    'bundler'     => '~> 1.0.7',
-    'rspec' => '~> 3.8'
+    'bundler' => '~> 1.0.7',
+    'rspec'   => '~> 3.8'
   }.each do |lib, version|
     s.add_development_dependency(lib, version)
   end
-  
+
   {
     'rails'  => '~> 5.0',
     'devise' => '~> 4.0'
   }.each do |lib, version|
     s.add_runtime_dependency(lib, version)
   end
-  
+
 end
